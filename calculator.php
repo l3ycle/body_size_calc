@@ -7,12 +7,20 @@
   <body>
 
     <?php
+echo "eingetragener Vorname: ". $_GET['vorname'];
+?>
 
-      $name = $_GET["name"]
+<form action="formular-m-anzeige.php" method="get" >
 
-      echo $name;
+<p>Ihr Vorname:
+<input type="text" name="vorname">
+</p>
 
-     ?>
+<p>
+<input type="submit" value="absenden">
+</p>
+
+</form>
 
   </body>
 </html>
