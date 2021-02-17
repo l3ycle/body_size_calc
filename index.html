@@ -6,15 +6,26 @@
   </head>
   <body>
 
+    <h2>Body Size Calculator</h2>
+
     <form action="calculator.php" method="get">
 
-      <p>Ihr Vorname:
-      <input type="text" name="vorname">
-      </p>
+      <input type="text" name="name" placeholder="name"> <br>
 
-      <p>
-      <input type="submit" value="absenden">
-      </p>
+      <input type="number" name="bodysize_father" placeholder="bodysize of your dad" min="0">
+      <label for="bodysize_father">cm</label><br>
+
+      <input type="number" name="bodysize_mother" placeholder="bodysize of your mom" min="0">
+      <label for="bodysize_mother">cm</label><br>
+
+      <input type="radio" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" name="gender" value="other">
+      <label for="other">Other</label><br>
+
+      <button type="submit" name="button">Submit</button>
 
     </form>
 
